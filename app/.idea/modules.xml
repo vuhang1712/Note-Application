@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../HUS_OOP_ToDoApplication.iml" filepath="$PROJECT_DIR$/../HUS_OOP_ToDoApplication.iml" group="HUS_OOP_ToDoApplication" />
+      <module fileurl="file://$PROJECT_DIR$/app.iml" filepath="$PROJECT_DIR$/app.iml" group="HUS_OOP_ToDoApplication/app" />
+    </modules>
+  </component>
+</project>

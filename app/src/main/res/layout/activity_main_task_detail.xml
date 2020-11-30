@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    >
+    <EditText
+        android:id="@+id/addSpecifyTaskText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textColor="#111"/>
+    <Button
+        android:id="@+id/updateSpecifyTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:text="UPDATE" />
+    <Button
+        android:id="@+id/deleteTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="10dp"
+        android:text="Delete"
+        android:layout_toLeftOf="@+id/updateSpecifyTask"
+        />
+    <RelativeLayout
+        android:id="@+id/layoutCheckbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/addSpecifyTaskText"
+        >
+        <CheckBox
+            android:id="@+id/specifyImportant"
+            android:text="Quan trọng"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <CheckBox
+            android:id="@+id/specifyRepeat"
+            android:text="Lặp lại"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/specifyImportant"
+            />
+        <Button
+            android:id="@+id/btn_alarmTask"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="220dp"
+            android:background="@drawable/ic_add_alarm" />
+        <Button
+            android:id="@+id/addTaskTag"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="40dp"
+            android:background="#FBF194"
+            android:text="ADD TAG" />
+        <ListView
+            android:id="@+id/listTagInTasks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            
+            android:layout_marginTop="80dp"
+            android:layout_below="@+id/edt_noteDetail" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/checkboxRole"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutCheckbox"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        >
+        <Button
+            android:id="@+id/viewNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Note"
+            />
+        <Button
+            android:id="@+id/viewTodoList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TO DO LIST"
+            android:layout_toLeftOf="@+id/viewNote"
+            android:layout_marginRight="20dp"
+            />
+    </RelativeLayout>
+    <CalendarView
+        android:layout_below="@+id/checkboxRole"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+</RelativeLayout>

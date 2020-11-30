@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.NoteDetailActivity">
+
+    <EditText
+        android:id="@+id/edt_noteDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cb_start"
+        android:layout_margin="20dp"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <CheckBox
+        android:id="@+id/cb_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="20dp"
+        android:button="@drawable/ic_star"
+        android:checked="false" />
+
+    <Button
+        android:id="@+id/btn_alarm"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_add_alarm" />
+
+    <Button
+        android:id="@+id/btn_deleteNote"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/ic_delete_black" />
+
+    <Button
+        android:id="@+id/btn_addTag"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_margin="20dp"
+        android:background="#FBF194"
+        android:text="ADD TAG" />
+
+    <Button
+        android:id="@+id/btn_saveNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lv_listTagInNote"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp"
+        android:text="SAVE"
+        android:textColor="#070707" />
+
+    <ListView
+        android:id="@+id/lv_listTagInNote"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/edt_noteDetail"
+        android:layout_margin="20dp" />
+</RelativeLayout>

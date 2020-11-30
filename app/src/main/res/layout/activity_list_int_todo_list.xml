@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    >
+        <EditText
+            android:id="@+id/editTodo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your edit"
+            />
+
+    <LinearLayout
+        android:layout_below="@+id/editTodo"
+        android:id="@+id/wrapLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/addTodoTag"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:background="#FBF194"
+            android:text="ADD TAG" />
+        <ListView
+            android:id="@+id/listTagInTodo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/wrapTodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wrapLayout"
+        >
+        <ListView
+            android:id="@+id/id_todointodoList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:choiceMode="multipleChoice"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/updateSpecifyTodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:text="UPDATE" />
+    <Button
+        android:id="@+id/deleteTodoList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="10dp"
+        android:text="Delete"
+        android:layout_toLeftOf="@+id/updateSpecifyTodo"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addTodoInTodoList"
+        android:text="THÊM VIỆC CẦN LÀM"
+        android:layout_below="@id/wrapTodo"
+        android:visibility="visible"
+    />
+    <EditText
+        android:id="@+id/addTodoInTodoListText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter name"
+        android:layout_below="@id/wrapTodo"
+        android:visibility="gone"
+        />
+    <Button
+        android:id="@+id/addWork"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:layout_below="@+id/addTodoInTodoListText"
+        android:visibility="gone"
+        />
+</RelativeLayout>
+
+

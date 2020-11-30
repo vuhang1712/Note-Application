@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.NoteActivity">
+    <TextView
+        android:id="@+id/tv_myNotes"
+        android:text="My Notes"
+        android:textSize="25dp"
+        android:textColor="#F81707"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edt_addNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_myNotes"
+        android:layout_margin="20dp"
+        android:hint="Enter your note in here..." />
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_addNote"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20sp"
+        android:hint="Search"
+        android:visibility="gone"
+        />
+
+    <Button
+        android:id="@+id/btn_addNote"
+        android:layout_alignEnd="@+id/tv_myNotes"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/ic_add_note"
+        android:layout_margin="20dp"/>
+    <ListView
+        android:id="@+id/lv_listNote"
+        android:layout_below="@+id/search"
+        android:layout_above="@+id/btn_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:text="RESET" />
+</RelativeLayout>

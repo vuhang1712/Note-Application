@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/idLinearLayout"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1dp"
+    android:background="#FFFFFF"
+    android:orientation="horizontal">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:id="@+id/taskName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:text="ITEM EXAMPLE"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+        <LinearLayout
+            android:id="@+id/tagLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/taskName">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            >
+            <ImageButton
+                android:id="@+id/starButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_favorites"
+                />
+            <CheckBox
+                android:id="@+id/checkImportantBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
